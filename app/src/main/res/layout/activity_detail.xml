@@ -1,3 +1,63 @@
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:orientation="vertical"-->
+<!--    tools:context=".MyPageActivity">-->
+
+
+<!--    <ScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_weight="1"-->
+<!--        android:orientation="vertical">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:orientation="vertical">-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="1380dp"-->
+<!--                android:src="@drawable/detailpage" />-->
+
+<!--        </LinearLayout>-->
+
+<!--    </ScrollView>-->
+
+<!--    <FrameLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+<!--        -->
+<!--        <Button-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:text="예매하기"-->
+<!--            android:background="#5E17EB"/>-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:layout_gravity="bottom"-->
+<!--            android:background="#FFFFFF"-->
+<!--            android:src="@drawable/navigationbar_mainpage" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/detail_button"-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:layout_marginTop="40dp"-->
+<!--            android:layout_marginLeft="85dp"-->
+<!--            android:background="#00FF0000"/>-->
+
+<!--    </FrameLayout>-->
+
+<!--</LinearLayout>-->
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -29,22 +89,32 @@
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="80dp">
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_weight="1"
-            android:background="#FFFFFF"
-            android:src="@drawable/navigationbar_mainpage" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:text="예매하기"
+                android:background="#5E17EB"/>
 
-        <Button
-            android:id="@+id/detail_button"
-            android:layout_width="35dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginLeft="313dp"
-            android:background="#00FF0000"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_gravity="bottom"
+                android:background="#FFFFFF"
+                android:src="@drawable/navigationbar_mainpage" />
+
+
+
+<!--        <Button-->dmsrkql104321@gmail.co,
+<!--            android:id="@+id/detail_button"-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:layout_marginTop="40dp"-->
+<!--            android:layout_marginLeft="85dp"-->
+<!--            android:background="#00FF0000"/>-->
 
     </FrameLayout>
 
