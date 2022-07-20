@@ -42,11 +42,35 @@
 
     </ScrollView>
 
-    <ImageView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_weight="1"
-        android:background="#FFFFFF"
-        android:src="@drawable/navigationbar_mainpage" />
+        android:layout_height="wrap_content"
+        android:orientations="horizontal">
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="31dp"
+            android:background="@drawable/home"/>
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="31dp"
+            android:background="@drawable/ticket_gray"/>
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="31dp"
+            android:background="@drawable/site_gray"/>
+
+        <Button
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="31dp"
+            android:background="@drawable/myinfo_gray"/>
+
+    </LinearLayout>
 
 </LinearLayout>
