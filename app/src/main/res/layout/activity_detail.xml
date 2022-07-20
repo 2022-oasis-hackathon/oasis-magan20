@@ -79,43 +79,46 @@
             android:orientation="vertical">
 
             <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="1380dp"
-                android:src="@drawable/detailpage" />
+                    android:layout_width="match_parent"
+                    android:layout_height="1250dp"
+                    android:src="@drawable/detailpage"/>
 
         </LinearLayout>
 
     </ScrollView>
 
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="80dp">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:layout_weight="1"
-                android:text="예매하기"
-                android:background="#5E17EB"/>
+        <Button
+                android:id="@+id/home_button"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="36dp"
+                android:background="@drawable/home"/>
 
-            <ImageView
-                android:layout_width="match_parent"
+        <Button
+                android:id="@+id/ticket_button"
+                android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:layout_weight="1"
-                android:layout_gravity="bottom"
-                android:background="#FFFFFF"
-                android:src="@drawable/navigationbar_mainpage" />
+                android:layout_marginLeft="36dp"
+                android:background="@drawable/ticket_gray"/>
 
+        <Button
+                android:id="@+id/site_button"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_marginLeft="36dp"
+                android:background="@drawable/site_gray"/>
 
+        <Button
+                android:id="@+id/myinfo_button"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="37dp"
+                android:background="@drawable/myinfo_gray"/>
 
-<!--        <Button-->dmsrkql104321@gmail.co,
-<!--            android:id="@+id/detail_button"-->
-<!--            android:layout_width="50dp"-->
-<!--            android:layout_height="40dp"-->
-<!--            android:layout_marginTop="40dp"-->
-<!--            android:layout_marginLeft="85dp"-->
-<!--            android:background="#00FF0000"/>-->
-
-    </FrameLayout>
+    </LinearLayout>
 
 </LinearLayout>

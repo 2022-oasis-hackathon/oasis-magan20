@@ -8,9 +8,46 @@ import android.widget.Button;
 
 public class MyPageActivity extends AppCompatActivity {
 
+    private Button home_button, ticket_button, site_button, myinfo_button;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_page);
+
+        home_button = findViewById(R.id.home_button);
+        home_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MyPageActivity.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        ticket_button = findViewById(R.id.ticket_button);
+        ticket_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MyPageActivity.this, TicketActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        site_button = findViewById(R.id.site_button);
+        site_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MyPageActivity.this, SiteActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        myinfo_button = findViewById(R.id.myinfo_button);
+        myinfo_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MyPageActivity.this, MyPageActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
