@@ -14,7 +14,7 @@ import com.example.oasis_project.databinding.ActivityListBinding;
 
 public class ListActivity extends AppCompatActivity {
 
-    private Button list_button;
+    private Button list_button, home_button, ticket_button, site_button, myinfo_button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,5 +29,42 @@ public class ListActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        home_button = findViewById(R.id.home_button);
+        home_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ListActivity.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        ticket_button = findViewById(R.id.ticket_button);
+        ticket_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ListActivity.this, TicketActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        site_button = findViewById(R.id.site_button);
+        site_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ListActivity.this, SiteActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        myinfo_button = findViewById(R.id.myinfo_button);
+        myinfo_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ListActivity.this, MyPageActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }

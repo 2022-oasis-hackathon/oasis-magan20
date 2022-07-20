@@ -19,16 +19,11 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <FrameLayout
+
+            <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="590dp"
-                    android:src="@drawable/ticketpage" />
-
-            </FrameLayout>
+                android:layout_height="590dp"
+                android:src="@drawable/ticketpage" />
 
         </LinearLayout>
 
