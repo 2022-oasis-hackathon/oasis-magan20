@@ -14,15 +14,42 @@ import com.example.oasis_project.databinding.ActivityDetailBinding;
 
 public class DetailActivity extends AppCompatActivity {
 
-    private Button detail_button;
+    private Button home_button, ticket_button, site_button, myinfo_button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
 
-        detail_button = findViewById(R.id.detail_button);
-        detail_button.setOnClickListener(new View.OnClickListener() {
+        home_button = findViewById(R.id.home_button);
+        home_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(DetailActivity.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        ticket_button = findViewById(R.id.ticket_button);
+        ticket_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(DetailActivity.this, TicketActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        site_button = findViewById(R.id.site_button);
+        site_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(DetailActivity.this, SiteActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        myinfo_button = findViewById(R.id.myinfo_button);
+        myinfo_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(DetailActivity.this, MyPageActivity.class);
