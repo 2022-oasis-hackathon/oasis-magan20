@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -24,16 +25,8 @@
 
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="1455dp"
-                    android:src="@drawable/listpage" />
-
-                <Button
-                    android:id="@+id/list_button"
-                    android:layout_width="130dp"
-                    android:layout_height="130dp"
-                    android:layout_marginTop="260dp"
-                    android:layout_marginLeft="110dp"
-                    android:background="#00FF0000"/>
+                    android:layout_height="590dp"
+                    android:src="@drawable/ticketpage" />
 
             </FrameLayout>
 
@@ -47,24 +40,28 @@
         android:orientations="horizontal">
 
         <Button
+            android:id="@+id/home_button"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginLeft="36dp"
-            android:background="@drawable/home"/>
+            android:background="@drawable/home_gray"/>
 
         <Button
+            android:id="@+id/ticket_button"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginLeft="36dp"
-            android:background="@drawable/ticket_gray"/>
+            android:background="@drawable/ticket"/>
 
         <Button
+            android:id="@+id/site_button"
             android:layout_width="43dp"
             android:layout_height="43dp"
             android:layout_marginLeft="36dp"
             android:background="@drawable/site_gray"/>
 
         <Button
+            android:id="@+id/myinfo_button"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginLeft="37dp"
